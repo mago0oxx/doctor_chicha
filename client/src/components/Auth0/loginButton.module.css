@@ -1,0 +1,17 @@
+.btnlog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(189, 130, 21);
+    color: beige;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid silver;
+    font-size: 18px;
+
+}
+.btnlog:hover{
+    background-color: #3014e7;
+}

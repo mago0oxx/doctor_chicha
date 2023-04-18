@@ -1,0 +1,59 @@
+.container{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+
+.select{
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    width:  20%; 
+    height: 300px;
+    background:    rgb(2,0,36);
+    background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,81,1) 17%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,81,1) 17%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,81,1) 17%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.info{
+    margin: 10px;
+    height: 200vh;
+   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    display: flex;
+    justify-content:space-evenly;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    width: 78%;
+    flex-wrap: wrap;
+}
+.aside{
+    display: flex;
+    
+}
+.paginado{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+.card {
+    margin: 5px;
+    height: 500px; /* ajusta la altura según tus necesidades */
+  }
+  
+  .cardimgtop {
+    padding: 2px;
+    object-fit: cover;
+    height: 70%; /* ajusta la altura según tus necesidades */
+  }

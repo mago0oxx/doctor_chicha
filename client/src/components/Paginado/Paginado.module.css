@@ -1,0 +1,37 @@
+.paginado {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 300px
+}
+.btn{
+    width: 25px;
+    height: 30px;
+    
+    color: antiquewhite;
+    background-color: rgb(214, 29, 29);
+    margin: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+.nav ul :hover{
+   box-shadow: none;
+   background-color: blue;
+    cursor: pointer;
+
+}
+a {
+    color:bisque;
+    text-decoration: none;
+}

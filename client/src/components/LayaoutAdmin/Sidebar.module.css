@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+    margin-top: 0;
+    background-color: black ;
+}
+
+.logo{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}

@@ -1,0 +1,30 @@
+.Container {
+    height: 100vh;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    color: beige;
+  }
+
+
+/* .background {
+   height: 100vh;;
+    margin: 0;
+    background-image: url('../assets/backgroundLanding.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+  .card {
+    margin: 10px;
+    height: 300px; /* ajusta la altura según tus necesidades */
+  }
+  
+  .cardimgtop {
+    padding: 2px;
+    object-fit: cover;
+    height: 70%; /* ajusta la altura según tus necesidades */
+  }
+  
