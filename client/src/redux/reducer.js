@@ -9,7 +9,8 @@ import {
     GET_CATEGORY,
     GET_TYPES,
     ORDER_BY_ATTACK,
-    GET_POKEMON_DETAIL
+    GET_POKEMON_DETAIL,
+    ASK_TO_GPT
 } from "./actions";
 
 const initialState = {
@@ -18,8 +19,8 @@ const initialState = {
         product: [],
           types: [],
          detail: [],
-      categorys: []
-
+      categorys: [],
+      respuestas : []
 }
 
 export default function reducer(state = initialState, action) {
@@ -40,6 +41,12 @@ export default function reducer(state = initialState, action) {
             return {
                 ...state,
                 categorys : action.payload
+            }
+
+            case ASK_TO_GPT: 
+            return {
+                ...state,
+                respuestas: action.payload
             }
         // case SEARCH_POKEMON:
         //     return {

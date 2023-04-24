@@ -10,6 +10,7 @@ export const ORDER_BY_NAME = "ORDER_BY_NAME"
 export const ORDER_BY_ATTACK = "ORDER_BY_ATTACK"
 export const GET_TYPES = "GET_POKEMON_TYPES"
 export const GET_CATEGORY = "GET_CATEGORY"
+export const ASK_TO_GPT = "ASK_TO_GPT"
 
 export  function getProducts(){
     return async function (dispatch){
@@ -35,7 +36,29 @@ export function postProducts(payload){
         
     }
 }
+ 
+const openAIEndpoint = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
+export function AskToChatGpt(prompt){
+    return async function (dispatch){
+        const apiKey = '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';
+    const response = await axios.post(openAIEndpoint, {
+       prompt: prompt,
+       max_tokens: 100,
+       n: 1,
+       stop: null,
+       temperature: 0.7,
+       api_key: apiKey
+    });
+    return dispatch({
+     type: "ASK_TO_GPT",
+     payload: response.data.choices[0].text.trim()
+    })
+    }
+    
+ 
+    
+}
 
 export function searchPokemon(name){
     return async function (dispatch){
